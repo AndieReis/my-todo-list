@@ -1,0 +1,49 @@
+.todo-form-title {
+  color: var(--cor-secundaria);
+  text-align: center;
+  margin: 1em 0;
+}
+
+.todo-form {
+  background: none;
+  margin-bottom: 2em;
+  font-size: large;
+  padding: 1.5rem;
+}
+
+.todo-form-input {
+  font-size: 14px;
+  width: 60%;
+  border-radius: 8px;
+  padding: 12px;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+  outline: none;
+  border-bottom: 2px solid rgba(99, 99, 99, 0.2);
+}
+
+.todo-form-btn {
+  background-color: var(--cor-secundaria);
+  color: #ddd;
+  border-radius: 6px;
+  padding: 12px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  float: right;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.todo-form-btn:hover {
+  background-color: var(--cor-terciaria);
+  border: 1px solid cadetblue;
+  color: white;
+  transform: scale(1.1);
+}
+
+.error-message {
+  color: red;
+  margin-left: 3rem;
+}

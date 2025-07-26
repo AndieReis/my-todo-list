@@ -1,0 +1,31 @@
+.todo-item-li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--cor-quaternaria);
+}
+
+.todo-item-toggle {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todo-item-toggle:checked {
+  color: aqua;
+}
+.text-done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-task {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.todo-item-delete-btn {
+  background-color: transparent;
+  font-size: 18px;
+  color: #ee200d;
+  cursor: pointer;
+}

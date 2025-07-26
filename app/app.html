@@ -1,0 +1,5 @@
+<div class="container">
+  <app-todo-form (taskAdded)="todoList.addTask($event)"></app-todo-form>
+
+  <app-todo-list #todoList></app-todo-list>
+</div>
