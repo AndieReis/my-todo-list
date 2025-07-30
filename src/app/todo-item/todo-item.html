@@ -1,0 +1,15 @@
+<li class="todo-item-li">
+  <input
+    (click)="toggleDone()"
+    [ngClass]="{ done: task.done }"
+    [checked]="task.done"
+    type="checkbox"
+    class="todo-item-toggle"
+  />
+  <span class="todo-task" [ngClass]="{ 'text-done': task.done }">{{
+    task.text
+  }}</span>
+  <button class="todo-item-delete-btn" (click)="deleteThisTask()">
+    &#10060;
+  </button>
+</li>

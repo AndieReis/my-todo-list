@@ -1,0 +1,34 @@
+<div class="main-container">
+  <div class="todo-list-display">
+    <ul class="todo-item-list">
+      <p *ngIf="!listEmpty" class="tasks-count">
+        Tarefas Cadastradas: {{ qtdeTasks }}
+      </p>
+      <p *ngIf="listEmpty" class="empty-list-message">
+        Lista vazia... Adicione uma tarefa para começar.
+      </p>
+
+      <app-todo-item
+        *ngFor="let task of tasks"
+        [task]="task"
+        (taskToggled)="toggleTaskStatus($event)"
+        (taskDeleted)="deleteTaskFromList($event)"
+      ></app-todo-item>
+      <div *ngIf="completedTasksCount > 0" class="completed-tasks-section">
+        <h3 class="completed-item-done">
+          Tarefas Concluídas: {{ completedTasksCount }}
+        </h3>
+        <ul class="completed-item-list">
+          <li
+            *ngFor="let completedTask of completedTasks"
+            class="completed-item-li"
+          >
+            <span class="completed-task-text"
+              >{{ completedTask.text }} (Concluída)</span
+            >
+          </li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+</div>
